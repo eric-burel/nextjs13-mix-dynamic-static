@@ -1,6 +1,11 @@
 import Link from "next/link";
 
+// works but I would rather have the layout handle this
+// because I need to reproduce this code on all static descendant of [lang]
+export const generateStaticParams = () => [{ lang: "fr" }, { lang: "de" }];
+
 export default function LangHome({ params }: any) {
+  console.log("Rendering LangHome", { params });
   return (
     <div>
       <p>Params from LangHome: {JSON.stringify(params)}</p>
