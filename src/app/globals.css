@@ -105,3 +105,12 @@ a {
     color-scheme: dark;
   }
 }
+
+a {
+  display: block;
+  background-color: #345678;
+  color: white;
+  margin: 8px;
+  padding: 8px;
+  max-width: 200px;
+}
